@@ -50,17 +50,17 @@ section .color:nth-child(3){
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    animation: 10s linear infinite;
+    animation: animate 10s linear infinite;
     animation-delay: calc(-1s * var(--i));
 }
 @keyframes animate{
     0%,100%
     {
-    transform: translate(-40px);
+    transform: translateY(-40px);
     }
     50%
     {
-    transform: translate(40px);
+    transform: translateY(40px);
     }
 }
 .box .square:nth-child(1){
@@ -169,6 +169,11 @@ section .color:nth-child(3){
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.form .inputbox input[type="submit"]:hover{
+    color: black;
+    background: rgba(255, 255, 255, 0.5) ;
 }
 .forget{
     margin-top: 15px;
