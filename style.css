@@ -169,6 +169,7 @@ section .color:nth-child(3){
     font-weight: 600;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: 0.3s
 }
 
 .form .inputbox input[type="submit"]:hover{
